@@ -1,0 +1,54 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Suppose there are <code>ducks</code> floating on the pond in a circle. The pond is also home for alligator with a fondness for ducks. Beginning at a particular position (duck number 1) the alligator counts clockwise around the circle and eats every <code>step</code>-th duck (the circle closing as ducks are eaten).
+</p>
+
+<p style="text-align: justify;">
+    For example, when <code>ducks = 8</code> and <code>step = 4</code>, the following diagram shows duck number outside and consumption order inside:
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}gator-and-ducks.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    The first duck is fifth on the menu, the second is forth, etc. The sequence <code>5, 4, 6, 1, 3, 8, 7, 2</code> of orders of consumption completely describes alligator's menu.
+</p>
+
+<p style="text-align: justify;">
+    Write a script which returns the orders of consumption of the ducks given <code>ducks, step</code>.
+</p>
+<!-- Explain input and output values -->
+<p>
+    <strong>Input:</strong> Two integers <span translate="no">({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+    <strong>Output:</strong> <span translate="repeat">{% if is_js %}Array{% else %}List{% endif %}</span> of integers. 
+</p>
+
+
+<p>
+    <strong>Examples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
+<p><i>The mission was taken from <a target="_blank" href="https://icpc.global/worldfinals/problems/1974-ICPC-World-Finals/1974-Texas.pdf">The International Collegiate Programming Contest</a>.</i></p>
