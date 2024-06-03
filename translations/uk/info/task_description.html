@@ -1,0 +1,54 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Припустимо, що на ставку по колу плавають <code>ducks</code>. У ставку також живе алігатор, який полюбляє качок. Починаючи з певної позиції (качка номер 1), алігатор рахує за годинниковою стрілкою по колу і з'їдає кожну <code>step</code>-ту качку (коло замикається по мірі того, як качки з'їдаються).
+</p>
+
+<p style="text-align: justify;">
+    Наприклад, коли <code>ducks = 8</code> і <code>step = 4</code>, на наступній діаграмі показано номер качки зовні і порядок споживання всередині:
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}gator-and-ducks.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    Перша качка є п'ятою в меню, друга - четвертою і т.д. Послідовність <code>5, 4, 6, 1, 3, 8, 7, 2</code> порядку споживання повністю описує меню алігатора.
+</p>
+
+<p style="text-align: justify;">
+    Напишіть скрипт, який повертає порядок споживання качок, заданий <code>ducks, step</code>.
+</p>
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> Два цілих числа <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Вихідні дані:</strong> {% if is_js %}Масив{% else %}Список{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> цілих чисел. 
+</p>
+
+
+<p>
+    <strong>Приклади:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Передумова:</strong>
+    <ul>
+    <li><i>качки, крок &gt; 0</i></li>
+    </ul>
+</p>
+<p><i>Завдання взято з сайту <a target="_blank" href="https://icpc.global/worldfinals/problems/1974-ICPC-World-Finals/1974-Texas.pdf">The International Collegiate Programming Contest - 1974</a>.</i></p>
