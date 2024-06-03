@@ -1,0 +1,54 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    Angenommen, auf dem Teich schwimmen <code>ducks</code> in einem Kreis. In dem Teich lebt auch ein Alligator, der eine Vorliebe für Enten hat. Beginnend an einer bestimmten Stelle (Ente Nummer 1) zählt der Alligator im Uhrzeigersinn um den Kreis und frisst jede <code>step</code>-te Ente (der Kreis schließt sich, wenn die Enten gefressen werden).
+</p>
+
+<p style="text-align: justify;">
+    Wenn Sie zum Beispiel <code>ducks = 8</code> und <code>step = 4</code> verwenden, zeigt das folgende Diagramm die Entennummer außen und die Reihenfolge des Verzehrs innen:
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}gator-and-ducks.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    Die erste Ente ist die fünfte auf der Speisekarte, die zweite die vierte usw. Die Reihenfolge <code>5, 4, 6, 1, 3, 8, 7, 2</code> der Verzehrreihenfolge beschreibt das Menü des Alligators vollständig.
+</p>
+
+<p style="text-align: justify;">
+    Schreiben Sie ein Skript, das die Verzehrsreihenfolge der Enten unter <code>ducks, step</code> ausgibt.
+</p>
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Zwei ganze Zahlen <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> {% if is_js %}Array{% else %}Liste{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span> von ganzen Zahlen. 
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Vorbedingung:</strong>
+    <ul>
+    <li><i>enten, Schritt &gt; 0</i></li>
+    </ul>
+</p>
+<p><i>Die Mission wurde von <a target="_blank" href="https://icpc.global/worldfinals/problems/1974-ICPC-World-Finals/1974-Texas.pdf">The International Collegiate Programming Contest - 1974</a> übernommen.</i></p>
