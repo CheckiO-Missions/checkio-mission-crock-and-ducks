@@ -1,0 +1,54 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    假设池塘上漂浮着一圈<code>ducks</code> 。池塘里还有喜欢吃鸭子的鳄鱼。鳄鱼从某个位置（1 号鸭子）开始顺时针绕圈数，每吃掉<code>step</code>-00 - 只鸭子（鸭子被吃掉后，圆圈就会闭合）。
+</p>
+
+<p style="text-align: justify;">
+    例如，当<code>ducks = 8</code> 和<code>step = 4</code> 时，下图显示了鸭子编号在外侧，食用顺序在内侧：
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}gator-and-ducks.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+    第一只鸭子是菜单上的第五只，第二只是第四只，等等。<code>5, 4, 6, 1, 3, 8, 7, 2</code> 的消费顺序完全描述了鳄鱼的菜单。
+</p>
+
+<p style="text-align: justify;">
+    编写一个脚本，返回给定的鸭子的消费顺序<code>ducks, step</code> 。
+</p>
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>两个整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出：</strong> {% if is_js %}数组{% else %}列表{% endif %} <span>({% if is_js %}Array{% else %}List{% endif %})</span>的整数。 
+</p>
+
+
+<p>
+    <strong>例子</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>前提条件</strong>
+    <ul>
+    <li><i>ducks, step &gt; 0</i></li>
+    </ul>
+</p>
+<p><i>任务来自<a target="_blank" href="https://icpc.global/worldfinals/problems/1974-ICPC-World-Finals/1974-Texas.pdf">The International Collegiate Programming Contest - 1974</a> 。</i></p>
